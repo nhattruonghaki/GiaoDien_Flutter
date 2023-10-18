@@ -105,29 +105,56 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
             ), */
             
-            Row(children: [
+           /*  Row(children: [
               Container(child: 
               Row(children: [
                 Icon(Icons.production_quantity_limits,color: Colors.redAccent),
-                Text(" Số sản phẩm đã mua",style: TextStyle(fontSize: 16,),),
-                Text("          :          $_SPDM     ",style: TextStyle(fontSize: 16,),),
+                Text("\n Số sản phẩm đã mua          :          $_SPDM     \n",style: TextStyle(fontSize: 16,),),
               ]),
               ),
               Container(child: 
               Row(children: [
                 Icon(Icons.paid,color: Colors.yellowAccent,),
-                Text(" Tổng chi tiêu",style: TextStyle(fontSize: 16,),),
-                Text("          :          $_TongChiTieu Đ     ",style: TextStyle(fontSize: 16),)
+                Text("\n Tổng chi tiêu          :          $_TongChiTieu Đ     \n",style: TextStyle(fontSize: 16,),),
               ]),
               ),
               
               Container(child: 
               Row(children: [
                 Icon(Icons.star_border,color: Colors.yellow,),
-                Text(" Đã đánh giá",style: TextStyle(fontSize: 16),),
-                Text("          :          $_DG     ",style: TextStyle(fontSize: 16),)
+                Text("\n Đã đánh giá          :          $_DG     \n",style: TextStyle(fontSize: 16),),
               ]),
               ),
+            ],
+            ), */
+            Row(children: [Column(crossAxisAlignment: CrossAxisAlignment.start,children: [
+              Container(child:
+              Row(children: [
+                Icon(Icons.production_quantity_limits,color: Colors.redAccent),
+                Text("\n Số sản phẩm đã mua          :          $_SPDM     \n",style: TextStyle(fontSize: 16,),),
+                SizedBox(width: 50,),
+                Text("Sản phẩm",style: TextStyle(fontSize: 16),)
+              ]),
+              ),
+              Container(child: 
+              Row(children: [
+                Icon(Icons.paid,color: Colors.yellowAccent,),
+                Text("\n Tổng chi tiêu                       :          $_TongChiTieu\n",style: TextStyle(fontSize: 16,),),
+                SizedBox(width: 30,),
+                Text("Đồng",style: TextStyle(fontSize: 16),)
+              ]),
+              ),
+              
+              Container(child: 
+              Row(children: [
+                Icon(Icons.star_border,color: Colors.yellow,),
+                Text("\n Đã đánh giá                        :          $_DG     \n",style: TextStyle(fontSize: 16),),
+                SizedBox(width: 50,),
+                Text("Sản phẩm",style: TextStyle(fontSize: 16),)
+              ]),
+              ),
+            ],
+            ),
             ],
             ),
             Row(),
